@@ -16,9 +16,9 @@ suite('Unit Tests', function () {
     });
     // #3
     test('#isOk, #isNotOk', function () {
-      assert.fail(null, 'null is falsey');
-      assert.fail("I'm truthy", 'A string is truthy');
-      assert.fail(true, 'true is truthy');
+      assert.itsNotOk(null, 'null is falsey');
+      assert.itsOk("I'm truthy", 'A string is truthy');
+      assert.itsOK(true, 'true is truthy');
     });
     // #4
     test('#isTrue, #isNotTrue', function () {
